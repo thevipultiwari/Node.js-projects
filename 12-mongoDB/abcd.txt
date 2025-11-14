@@ -1,0 +1,17 @@
+Data Storage:
+
+Types of DBS- SOL | NoSQL
+SQL-Data ko ek roop mein rakhna -tables
+NoSQL- data object ke room mein rakha jayega
+MongoDB is the database on the basis of NoSQL concept.
+{
+    name:"harsh",
+    age:25
+}
+
+
+what and why
+
+terminologies -collections, documents,schemas,keys,models
+1-Backend: Application server(Node.js) +  Database server(MongoDB)
+2-Colections
