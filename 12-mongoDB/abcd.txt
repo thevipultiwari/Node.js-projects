@@ -2,7 +2,11 @@ Data Storage:
 
 Types of DBS- SOL | NoSQL
 SQL-Data ko ek roop mein rakhna -tables
+
 NoSQL- data object ke room mein rakha jayega
+
+MongoDB is a NoSQL database that stores data in JSON-like format.
+no tables, no rows, no columns
 MongoDB is the database on the basis of NoSQL concept.
 {
     name:"harsh",
@@ -14,4 +18,26 @@ what and why
 
 terminologies -collections, documents,schemas,keys,models
 1-Backend: Application server(Node.js) +  Database server(MongoDB)
-2-Colections
+2-Collections
+
+
+Database -> Colections -> Document
+Code
+-----------------------------------------------------------
+
+CODE                      DATABASE
+-----------------------------------------------------------
+mongoose.connect  -> database create
+model create      -> collection
+CREATE CODE       -> document
+
+
+
+MongoDB stores data inside:
+-----------------------------------------------------------
+SQL Term	            MongoDB Equivalent
+
+Database	            Database
+Table	                Collection
+Row	                    Document
+Column	                Field
