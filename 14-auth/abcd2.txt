@@ -1,0 +1,27 @@
+cookies and sessions
+
+1. Cookies
+Cookies are small pieces of data stored in the user's browser.
+
+✔ Used to store:
+
+login tokens
+user preferences (theme, language)
+cart items (in ecommerce)
+remember-me tokens
+
+e.g- Set-Cookie: token=12345;
+
+2. Sessions
+Sessions store data on the server, NOT in the browser.
+
+Sessions are used for:
+
+Login systems
+Tracking logged-in users
+Storing user data securely
+
+# What to learn?
+a) how to set and read cookies?
+b) use of bcrypt in password encryption decryption
+c) jwt? and how to store data in jwt? 

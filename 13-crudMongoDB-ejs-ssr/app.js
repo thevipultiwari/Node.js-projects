@@ -20,7 +20,7 @@ app.post("/create", async (req, res) => {
   let createdUser = await userModel.create({
     name,
     email,
-    image
+    image,
   });
   res.redirect("/read");
 });
@@ -28,8 +28,24 @@ app.post("/create", async (req, res) => {
 // read user
 app.get("/read", async (req, res) => {
   const users = await userModel.find();
-  console.log(users.map((u) => u.image));
   res.render("read", { users });
+});
+
+// edit page
+app.get("/edit/:userid", async (req, res) => {
+  let user = await userModel.findOne({ _id: req.params.userid });
+  res.render("edit", { user });
+});
+
+//update user
+app.post("/update/:userid", async (req, res) => {
+  let { name, image, email } = req.body;
+  let user = await userModel.findOneAndUpdate(
+    { _id: req.params.userid },
+    { name, email, image },
+    { new: true }
+  );
+  res.redirect("/read");
 });
 
 // delete user
@@ -39,5 +55,5 @@ app.get("/delete/:id", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`server is running at ${3000}`);
+  console.log(`server is running at ${port}`);
 });

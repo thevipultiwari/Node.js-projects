@@ -1,0 +1,24 @@
+authentication and authorization
+
+Authentication means verifying the identity of the user.
+(It is the login process)
+
+Examples:
+
+Logging in with email + password
+OTP verification
+Fingerprint / Face ID
+Google / GitHub login (OAuth)
+API key validation
+
+Authorization decides what resources or actions a user is allowed to access after authentication.
+(It is the permission system.)
+
+Examples:
+
+Normal user cannot access admin dashboard
+User can edit only their own profile
+Only admins can delete posts
+File permissions: read / write / execute
+
+***You MUST authenticate before authorization can happen.
