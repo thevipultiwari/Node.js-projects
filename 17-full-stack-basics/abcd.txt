@@ -1,0 +1,6 @@
+CORS
+Cross-Origin Resource Sharing
+
+if (port || url is differnt){
+    cors
+}
